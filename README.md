@@ -36,7 +36,7 @@ We solve an optimisation problem for acceleration in each wheel.
     - $y_i = y_{i-1} + \frac{v_r + v_l}{2} * sin(\theta_{i-1}) * dt$  
     - $\theta_i = \theta_{i-1} + \frac{v_r - v_l}{L} * dt$  
 
-2. Constraints: We enforce maximum and minimum constraints 
+2. Constraints: We enforce maximum and minimum constraints on each wheel's velocity.
 
 3. Objective Function: This is of the form $\sum{w_i*(\text{cost}_i)^2}$. The factors, $\text{cost}_i$ are listed below. We must choose appropriate weights, $w_i$ for each of them. The path to follow has been defined as a polynomial $f(x)$.
     - $v_r + v_l - 2 * v_{ref}$
